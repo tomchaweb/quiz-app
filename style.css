@@ -1,0 +1,131 @@
+html {
+    font-size: 10px;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    background-color: #009688;
+}
+
+body {
+    font-size: 3rem;
+}
+
+h1 {
+    font-weight: 900;
+    letter-spacing: -0.1rem;
+}
+
+.quiz-container {
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 40px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 20px 5px 20px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 50%;
+    color: #292a29;
+    box-shadow: 5px 5px 5px #02665c;
+}
+
+#question-h2 {
+    margin-top: 0;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+button {
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 4rem;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 10px 0px black;
+    color: rgb(255, 255, 255);
+}
+
+#feedback-message {
+    margin: 0;
+}
+
+.true-false-div {
+    display: flex;
+    gap: 50px;
+}
+
+#true {
+    background-color: rgb(2, 93, 2);
+    box-shadow: 0px 10px 0px rgb(2, 58, 2);
+    padding: 10px;
+    width: 200px;
+    transition: all 0.1s;
+}
+
+
+#false {
+    background-color: rgb(154, 5, 5);
+    box-shadow: 0px 10px 0px rgb(106, 4, 4);
+    padding: 10px;
+    width: 200px;
+    transition: all 0.1s;
+}
+
+#true:hover, #false:hover{
+    cursor: pointer;
+    transform: translateY(10px);
+    box-shadow: none;
+}
+
+#next-btn {
+    color: black;
+    background-color: #009688;
+    box-shadow: 0px 10px 0px #025b52;
+    transition: all 0.1s;
+}
+
+#restart {
+    background-color: #009688;
+    box-shadow: 0px 10px 0px #025b52;
+    transition: all 0.1s;
+}
+
+#next-btn:hover, #restart:hover{
+    cursor: pointer;
+    transform: translateY(10px);
+    box-shadow: none;
+
+}
+
+#score {
+    width: 50%;
+    justify-self: right;
+    background-color: black;
+    border-radius: 5px;
+    color: green;
+}
+
+.hidden {
+    display: none;
+}
+
+@media(max-width: 900px){
+    .quiz-container{
+        padding: 50px;
+    }
+
+    .true-false-div{
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 600px){
+    body{
+        font-size: 2rem;
+    }
+
+    .quiz-container{
+        margin-top: 50px;
+    }
+}
