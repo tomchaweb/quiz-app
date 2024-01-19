@@ -111,8 +111,14 @@ button {
 }
 
 @media(max-width: 900px){
+    html {
+        background-color: rgb(240, 240, 240);
+    }
     .quiz-container{
+        width: 400px;
+        border: none;
         padding: 50px;
+        box-shadow: none;
     }
 
     .true-false-div{
